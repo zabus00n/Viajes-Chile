@@ -2,6 +2,36 @@
     height: 3rem;
 }
 
-.black {
-    color: black;
+.carousel-item img {
+    min-height: 240px;
+    max-height: 540px;
+    object-fit: cover;
+    object-position: 100% 25%;
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+    .carousel-item img {
+        max-height: 620px;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1999px) {
+    .carousel-item img {
+        max-height: 740px;
+        object-position: 100% 25%;
+    }
+}
+
+@media (min-width: 2000px) and (max-width: 2559px) {
+    .carousel-item img {
+        max-height: 900px;
+        object-position: 100% 25%;
+    }
+}
+
+@media (min-width: 2560px){
+    .carousel-item img {
+        max-height: 1200px;
+        object-position: 100% 25%;
+    }
 }
