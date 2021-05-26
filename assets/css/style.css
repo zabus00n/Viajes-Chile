@@ -9,6 +9,18 @@
     object-position: 100% 25%;
 }
 
+@media (min-width: 200px) and (max-width: 767px) {
+    li {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    li {
+        font-size: 18px;
+    }
+}
+
 @media (min-width: 1200px) and (max-width: 1439px) {
     .carousel-item img {
         max-height: 620px;
@@ -31,7 +43,50 @@
 
 @media (min-width: 2560px){
     .carousel-item img {
-        max-height: 1200px;
-        object-position: 100% 25%;
+        max-height: 1040px;
+        object-position: 100% 20%;
     }
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+span, footer h4 {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Satisfy', cursive;
+}
+
+h2 {
+    border-bottom: solid;
+    border-color: #264653;
+}
+
+#about, #featured, #contact {
+    background-color: #308C99;
+}
+
+#about i {
+    color: white;
+    background-color: #2a9d8f;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #264653;
+}
+
+.card {
+    border-color: #264653;
+}
+
+.card-body {
+    background-color: #2a9d8f;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
 }

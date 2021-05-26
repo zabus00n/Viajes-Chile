@@ -4,12 +4,9 @@ $(document).ready(function () {
 
   window.addEventListener('scroll', function () {
     if (window.pageYOffset > 100) {
-      nav.classList.add('bg-light', 'shadow');
-      $("a").removeClass('text-white');
-      $("a").css('color', 'black');
+      $(nav).css('background-color', '#264653');
     } else {
-      nav.classList.remove('bg-light', 'shadow');
-      $("a").css('color', 'white');
+      $(nav).css('background-color', 'initial');
     }
   });
 })
