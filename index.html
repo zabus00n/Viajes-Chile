@@ -17,11 +17,11 @@
 
 <body>
 
-    <!-- Navbar  -->
+    <!-- Navbar (customized to be transparent at default) - Bootstrap 5.0  -->
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
-        <div class="container">
-            <a class="navbar-brand d-inline-flex align-items-center" href="#"><img src="/assets/img/viajes.svg"
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3 px-xxl-5">
+        <div class="container-fluid px-xxl-5">
+            <a class="navbar-brand d-inline-flex align-items-center" href="#"><img src="assets/img/viajes.svg"
                     alt="Logo"><span class="d-none d-md-block ps-3">Viajes Chile</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,15 +50,15 @@
 
     <header>
 
-        <!-- Carousel  -->
+        <!-- Carousel (slides with controls) - Bootstrap JS 5.0 -->
 
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/assets/img/carousel1.jpg" class="d-block w-100" alt="carousel 1">
+                    <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="carousel 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="/assets/img/carousel2.jpg" class="d-block w-100" alt="carousel 2">
+                    <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="carousel 2">
                 </div>
                 <div class="carousel-item">
                     <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="carousel 3">
@@ -97,11 +97,15 @@
                         sapiente. Libero totam a voluptas voluptatibus odio. Assumenda libero neque similique deleniti
                         ullam corrupti earum magnam exercitationem cumque rem.</p>
                 </div>
+
+                <!-- Added "flex-column-reverse" class to make content shift order in larger devices -->
+
                 <div class="col d-flex flex-md-column flex-lg-column-reverse">
                     <div>
                         <i class="fas fa-suitcase fa-3x py-2 d-flex justify-content-center"></i>
                     </div>
-                    <p class="pt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, eius! Ab suscipit
+                    <p class="pt-3 pt-lg-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, eius! Ab
+                        suscipit
                         voluptate dolore accusantium sapiente voluptas aspernatur vitae vero aliquid reiciendis cum
                         reprehenderit temporibus, magnam culpa libero hic similique! Voluptas iusto, dolores
                         quibusdam vero aperiam porro illum, sed ut ex aliquid aspernatur neque soluta accusantium
@@ -132,13 +136,22 @@
     <section id="featured">
         <div class="container pb-5 pt-4">
             <h2 class="text-center pt-5 pb-4 display-6">Destacados</h2>
+
+            <!-- Cards (using grid system with row columns) - Bootstrap 5.0  -->
+
             <div>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 pt-3 px-3">
                     <div class="col d-flex">
                         <div class="card">
-                            <img src="/assets/img/card1.jpg" class="card-img-top" alt="card 1">
+                            <img src="assets/img/card1.jpg" class="card-img-top" alt="card 1">
                             <div class="card-body">
-                                <h4 class="card-title fs-4 fw-normal">Card title</h4>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <!-- Badge added to card title - Bootstrap 5.0  -->
+
+                                    <h4 class="card-title fs-4 fw-normal align-self-center">Card title</h4><span
+                                        class="badge bg-primary fw-normal align-self-center mb-2 p-2">New</span>
+                                </div>
                                 <p class="card-text fs-6">This is a longer card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
                             </div>
@@ -148,6 +161,22 @@
                         <div class="card">
                             <img src="assets/img/card2.jpg" class="card-img-top" alt="card 2">
                             <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <!-- Badge added to card title - Bootstrap 5.0  -->
+
+                                    <h4 class="card-title fs-4 fw-normal align-self-center">Card title</h4><span
+                                        class="badge bg-primary fw-normal align-self-center mb-2 p-2">New</span>
+                                </div>
+                                <p class="card-text fs-6">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex">
+                        <div class="card">
+                            <img src="assets/img/card3.jpg" class="card-img-top" alt="card 3">
+                            <div class="card-body">
                                 <h4 class="card-title fs-4 fw-normal">Card title</h4>
                                 <p class="card-text fs-6">This is a longer card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
@@ -156,17 +185,7 @@
                     </div>
                     <div class="col d-flex">
                         <div class="card">
-                            <img src="/assets/img/card3.jpg" class="card-img-top" alt="card 3">
-                            <div class="card-body">
-                                <h4 class="card-title fs-4 fw-normal">Card title</h4>
-                                <p class="card-text fs-6">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col d-flex">
-                        <div class="card">
-                            <img src="/assets/img/card4.jpg" class="card-img-top" alt="card 4">
+                            <img src="assets/img/card4.jpg" class="card-img-top" alt="card 4">
                             <div class="card-body">
                                 <h4 class="card-title fs-4 fw-normal">Card title</h4>
                                 <p class="card-text fs-6">This is a longer card with supporting text below as a natural
@@ -184,6 +203,9 @@
     <section id="contact">
         <div class="container pb-5 pt-4">
             <h2 class="text-center pt-5 pb-4 display-6">Contacto</h2>
+
+            <!-- Form added from Typeform -->
+
             <div class="typeform-widget pt-3 px-3"
                 data-url="https://form.typeform.com/to/mJvGVFwR?typeform-medium=embed-snippet"
                 style="width: 100%; height: 500px;"></div>
@@ -214,11 +236,22 @@
             <div class="col">
                 <h4>Viajes Chile</h4>
             </div>
+
+            <!-- Added Popovers to social media icon links - Bootstrap JS 5.0 -->
+
             <div class="col">
-                <a href="https://github.com"><i class="fab fa-github-square fa-2x pe-2"></i></a>
-                <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x pe-2"></i></a>
-                <a href="https://twitter.com"><i class="fab fa-twitter-square fa-2x pe-2"></i></a>
-                <a href="https://www.facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="https://github.com" target="_blank"><i class="fab fa-github-square fa-2x pe-2"
+                        data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="hover"
+                        data-bs-placement="top" data-bs-content="GitHub"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin fa-2x pe-2"
+                        data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="hover"
+                        data-bs-placement="top" data-bs-content="LinkedIn"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square fa-2x pe-2"
+                        data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="hover"
+                        data-bs-placement="top" data-bs-content="Twitter"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-2x"
+                        data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="hover"
+                        data-bs-placement="top" data-bs-content="Facebook"></i></a>
             </div>
         </div>
     </footer>
