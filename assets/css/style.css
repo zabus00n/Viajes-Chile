@@ -73,15 +73,13 @@ footer a {
     }
 }
 
-
-
 @media (min-width: 768px) {
     li {
         font-size: 18px;
     }
 }
 
-/* adjust carousel images dimensions and object position*/
+/* adjust carousel images dimensions and position*/
 
 @media (min-width: 1200px) and (max-width: 1439px) {
     .carousel-item img {
