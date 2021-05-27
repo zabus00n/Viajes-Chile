@@ -60,14 +60,20 @@ footer a {
 
 /* Media Queries */
 
-/* adjust font properties to navbar items*/
+/* adjust font properties to navbar elements*/
 
 @media (min-width: 200px) and (max-width: 767px) {
     li {
         font-weight: 500;
         font-size: 16px;
     }
+
+    nav span {
+        font-size: 24px;
+    }
 }
+
+
 
 @media (min-width: 768px) {
     li {
